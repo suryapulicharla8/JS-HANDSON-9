@@ -24,12 +24,42 @@
         <pre>let className=document.querySelector('.box').innerHTML="change text hello through hello world"
             console.log(className)</pre>
         <p>4.Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</p>
-        <div id="flex-container">
+        <!-- <div class="mainFlex">
+            <div class="flexBox"></div>
+            <div class="flexBox"></div>
+            <div class="flexBox"></div>
+        </div>
+        <button id="dir">Change Direction</button> -->
+        <style>
+            .flex-box{
+                display: flex;
+                background-color: red;
+                height: fit-content;
+                width: 100%;
+                height: 500px;
+                flex-direction: column;
+            }
+            .box-1 {
+                background-color: black;
+                color: black;
+                border: 2px solid whitesmoke;
+                height: 100px;
+                width: 100px;
+            }
+            #click {
+                height: fit-content;
+                width: max-content;
+                padding: 5px 10px;
+                background-color: aqua;
+                color: brown;
+            }
+        </style>
+        <div class="flex-box">
             <div class="box-1"></div>
             <div class="box-1"></div>
             <div class="box-1"></div>
         </div>
-        <button id="button" onclick()="">Change Color</button>
+        <button id="click">Click</button>
         <pre>function onbuttonclick(){
             var flex=document.getElementByClassName('flex-container')
             if(flex.style.flexDirection == "row"){
@@ -51,15 +81,36 @@
             heading.style.color="gold"
             heading.style.backgroundColor="black"</pre>
         <p>8.Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</p>
-        <pre>
+        <h4 id="chngtxt">Hello</h4>
+        <button id="changeTxt" onclick=""></button>
+        <pre>document.querySelector('#changeTxt').addEventListener('click',function(){
+            document.querySelector('#chngtxt').innerHTML="Elevation Accadamy"
+        })</pre>
         <p>9.Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</p>
         <pre>
         <p>10.Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected</p>
+        <lable for="years">Select Years</lable>;
+        <select name="years" id="name">
+            <option value="1">20-21</ption>
+            <option value="2">21-22</ption>
+        </select>
+        <div id="valuebox">
+            <div><button id="selBtn">get-value</button></div>
+            <div id="selValue">
+
+            </div>
+        </div>
         <pre>
         <p>11."Create a form having name ,email, phone no. , birth year 
             Add validations - phone no. should start with 91 , it should be 10 digits
             email should be domain prepbytes.com
             birth year should be > 95"</p>
+        <p>12.Implementation of time</p>
+        <div class="clock">
+            <span id="hr">00:</span>
+            <span id="min">00:</span>
+            <span id="sec">00:</span>
+        </div>
 
         <script src="./main.js"></script>
     </div>

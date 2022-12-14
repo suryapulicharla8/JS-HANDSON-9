@@ -1,4 +1,4 @@
-.box-1 {
+.flexBox{
     height: 100px;
     width: 100px;
     background-color: brown;
@@ -7,18 +7,20 @@
     /* display: flex; */
     /* align-items: center; */
 }
-#flex-container {
+.mainFlex {
     background-color: aqua;
     width: 100%;
     height:500px;
 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
-#button {
+#dir {
     background-color: black;
     color: white;
     border: 3px solid gold;
+    padding: 6px 12px;
 }
 
 p {
@@ -38,11 +40,27 @@ pre {
     font-weight: bolder;
 
 }
+#changeTxt {
+    height: fit-content;
+    width: max-content;
+    padding: 4px 8px ;
+    background-color: blue;
+    color: aliceblue;
+}
 pre:hover {
     transform: translateX(40px);
 }
+#valuebox {
+    background-color: pink;
+    color: black;
+    height: 4em;
+    width:8em;
+    margin-bottom: 2em;
+
+
+}
 div {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFI142Nuo0ZgHjUe5lumIGkrQrJZpM7itOQ7VTVQ92&s');
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFI142Nuo0ZgHjUe5lumIGkrQrJZpM7itOQ7VTVQ92&s'); */
 }
 h2 {
     background-color: aliceblue;
@@ -50,4 +68,7 @@ h2 {
     font-style: italic;
     font-weight: bolder;
 
+}
+.clock {
+    display: flex;
 }
